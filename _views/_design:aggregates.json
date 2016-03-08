@@ -1,0 +1,10 @@
+{
+  "_id": "_design/aggregates",
+  "_rev": "1-cf2a64c75db6599d3c2c28784e429637",
+  "views": {
+    "count": {
+      "reduce": "_count",
+      "map": "function (doc) {\n  emit(doc._id, 1);\n}"
+    }
+  }
+}

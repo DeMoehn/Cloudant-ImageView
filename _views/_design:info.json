@@ -1,0 +1,9 @@
+{
+  "_id": "_design/info",
+  "_rev": "1-67260aa8cdf9f82f7b78b40d25d1ed72",
+  "views": {
+    "docs": {
+      "map": "function (doc) {\n  var id = doc._id.split(\"-\");\n  if(id[0] == \"HS\") {\n    emit(doc._id, {\"_id\": doc._id, \"Title\":doc.Title, \"age\":doc.age, \"gender\": doc.gender, \"celebrity\":doc.celebrity});\n  }\n}"
+    }
+  }
+}

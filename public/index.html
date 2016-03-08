@@ -1,0 +1,42 @@
+<!doctype html>
+<html  lang="en">
+  <head>
+    <!-- META Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Image view">
+    <meta name="author" content="Sebastian Moehn">
+    <title>Image view</title>
+    <!-- SCRIPTS -->
+    <script src="config"></script>
+    <script src="js/src/jquery-2.1.4.min.js"></script>
+    <script src="js/client.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+
+    <div id="logo" class="wrapper-logo">
+      <div id="title" class="title">Image recognition visualization</div>
+    </div>
+
+    <div class="wrapper">
+      <div id="messages" class="wrapper-messages">
+        <div id="greeting" class="box">Choose between the images below</div><br/>
+      </div>
+
+      <div id="wrapper-data" class="wrapper-data">
+        <div class="loader"></div>
+        <div id="loadeddata" class="wrapper-loadeddata box">
+        </div>
+        <div id="pagecounter" class="pagecounter"></div>
+      </div>
+
+      <div id="datapoints" class="wrapper-datapoints">
+        <div><div id="dataptitle" class="dataptitle">0</div><br /><div class="datapsub">Total Pictures</div></div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
